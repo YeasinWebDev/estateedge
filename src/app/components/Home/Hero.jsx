@@ -7,16 +7,16 @@ import { AnimatedTooltip } from '../ui/animated-tooltip'
 
 function Hero() {
     return (
-        <div className='relative flex mt-10 mb-20 container mx-auto'>
+        <div className='relative flex mt-10 mb-[30rem] xl:mb-20 container mx-auto px-5 xl:px-0 flex-col md:flex-row'>
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
             >
-                <h1 className='text-[4rem] font-semibold'>Dominate Real Estate <br /> Marketing with <br />
+                <h1 className='text-[2rem] lg:text-[3rem] xl:text-[4rem] font-semibold'>Dominate Real Estate <br /> Marketing with <br />
                     EstateEdge
                 </h1>
-                <h3 className='text-[1.5rem] py-5'>
+                <h3 className='xl:text-[1.5rem] py-5'>
                     Generate High-Quality Leads, Dominate Your <br /> Market, and Skyrocket Your Sales with EstateEdge
                 </h3>
                 <button className='hidden md:flex items-center gap-2 bg-[#FED23D] px-10 py-3 rounded-full text-black cursor-pointer group hover:scale-105 transition duration-200'>
@@ -34,43 +34,43 @@ function Hero() {
                 transition={{ duration: 1, delay: 1 }}
             >
                 <motion.div
-                    className='absolute top-0 left-[4rem]'
+                    className='absolute top-0 lg:left-[4rem]'
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 3, repeat: Infinity }}
                 >
-                    <Image src={'/images/hero-1.png'} alt='hero1' width={319} height={319} />
+                    <Image src={'/images/hero-1.png'} alt='hero1' width={319} height={319} className="w-[200px] h-[200px] xl:w-[319px] xl:h-[319px]"/>
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[20rem] left-[10rem]'
+                    className='absolute top-[15rem] xl:top-[20rem] lg:left-[10rem]'
                     animate={{ y: [0, 15, 0] }}
                     transition={{ duration: 4, repeat: Infinity }}
                 >
-                    <Image src={'/images/hero-2.png'} alt='hero2' width={319} height={319} />
+                    <Image src={'/images/hero-2.png'} alt='hero2' width={319} height={319} className="w-[240px] h-[200px] xl:w-[319px] xl:h-[319px]"/>
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[4rem] right-48'
+                    className='absolute top-[4rem] 2xl:right-48 right-0 lg:right-2 xl:right-0'
                     animate={{ x: [0, -10, 0] }}
                     transition={{ duration: 5, repeat: Infinity }}
                 >
-                    <Image src={'/images/hero-3.png'} alt='hero3' width={319} height={236} />
+                    <Image src={'/images/hero-3.png'} alt='hero3' width={319} height={236} className="w-[200px] h-[180px] xl:w-[319px] xl:h-[319px]"/>
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[15rem] left-0'
+                    className='absolute top-[10rem] xl:top-[15rem] left-0'
                     animate={{ y: [0, -12, 0] }}
                     transition={{ duration: 4.5, repeat: Infinity }}
                 >
-                    <Image src={'/images/client.png'} alt='client' width={231} height={89} />
+                    <Image src={'/images/client.png'} alt='client' width={231} height={89} className="w-[180px] h-[75px] xl:w-[220px] xl:h-[90px]"/>
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[20rem] right-[16rem] z-10'
+                    className='absolute top-[15rem] xl:top-[20rem] right-0 xl:right-0 2xl:right-[16rem] z-10'
                     animate={{ rotate: [0, 5, -5, 0] }}
                     transition={{ duration: 6, repeat: Infinity }}
                 >
-                    <Image src={'/images/booked.png'} alt='booked' width={188} height={144} />
+                    <Image src={'/images/booked.png'} alt='booked' width={188} height={144} className="w-[150px] h-[110px] xl:w-[160px] xl:h-[140px]"/>
                 </motion.div>
             </motion.div>
         </div>
