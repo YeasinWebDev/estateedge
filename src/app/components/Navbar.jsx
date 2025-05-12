@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from 'react';
-import Arrow from '../Icons/arrow';
 import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { motion } from 'motion/react';
+import { IoArrowForward } from 'react-icons/io5';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ function Navbar() {
 
             <button className='hidden md:flex items-center gap-2 bg-black px-10 py-3 rounded-full text-[#F5F2ED] cursor-pointer group hover:scale-105 transition duration-200'>
                 Let's Talk
-                <span className='group-hover:rotate-45 transition duration-200'><Arrow /></span>
+                <span className='-rotate-45 group-hover:rotate-0 transition duration-200'><IoArrowForward size={20}/></span>
             </button>
 
             {/* Mobile Menu Button */}
@@ -65,7 +65,7 @@ function Navbar() {
                     </ul>
                     <button className='flex items-center gap-2 bg-black px-10 py-3 rounded-full text-[#F5F2ED] cursor-pointer hover:bg-gray-800 transition'>
                         Let's Talk
-                        <Arrow />
+                        <IoArrowForward size={20}/>
                     </button>
                 </div>
             </div>

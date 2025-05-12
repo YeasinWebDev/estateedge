@@ -1,5 +1,5 @@
 'use client'
-import Arrow from '@/app/Icons/arrow'
+import { IoArrowForward } from "react-icons/io5";
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
@@ -21,7 +21,7 @@ function Hero() {
                 </h3>
                 <button className='hidden md:flex items-center gap-2 bg-[#FED23D] px-10 py-3 rounded-full text-black cursor-pointer group hover:scale-105 transition duration-200'>
                     Schedule  Consultation Now
-                    <span className='group-hover:rotate-45 transition duration-200'><Arrow fill='#000' /></span>
+                    <span className='-rotate-45 group-hover:rotate-0 transition duration-200'><IoArrowForward size={20}/></span>
                 </button>
                 <div className='flex items-center mt-2'>
                     <AnimatedTooltip items={people} />
