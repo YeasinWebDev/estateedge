@@ -29,7 +29,7 @@ function Navbar() {
             {/* Desktop Navigation */}
             <ul className='hidden md:flex items-center gap-5 font-medium cursor-pointer'>
                 <Link href={'/pages/about'} className='hover:text-[#FED23D] transition'>About us</Link>
-                <li className='hover:text-[#FED23D] transition'>Our Team</li>
+                <Link href={'/pages/team'} className='hover:text-[#FED23D] transition'>Our Team</Link>
                 <li className='hover:text-[#FED23D] transition'>Services</li>
             </ul>
 
@@ -57,9 +57,9 @@ function Navbar() {
                         <Link href={'/pages/about'} className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
                             About us
                         </Link>
-                        <li className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
+                        <Link href={'/pages/team'} className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
                             Our Team
-                        </li>
+                        </Link>
                         <li className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
                             Services
                         </li>
@@ -74,13 +74,5 @@ function Navbar() {
     );
 }
 
-const listAnimation = (text) => {
-    return (
-        <div>
-            <li>{text}</li>
-            <li>{text}</li>
-        </div>
-    )
-}
 
 export default Navbar;
