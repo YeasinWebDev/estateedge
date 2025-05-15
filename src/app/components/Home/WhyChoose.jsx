@@ -56,6 +56,7 @@ function WhyChoose() {
                         <motion.div key={index} 
                             initial={{ y: -20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.7 + index * 0.2 }}
                         >
                             <div className='text-black text-xl bg-[#FED23D] w-fit p-2 rounded-full'>{item.icon}</div>
@@ -70,6 +71,7 @@ function WhyChoose() {
             <motion.div className=' h-full w-full hidden xl:block xl:w-[50%]'
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: 1 }}
             >
                 <Image

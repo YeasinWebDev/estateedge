@@ -7,7 +7,7 @@ import { AnimatedTooltip } from '../ui/animated-tooltip'
 
 function Hero() {
     return (
-        <div className='relative flex mt-10 mb-[30rem] xl:mb-20 container mx-auto px-5 xl:px-0 flex-col md:flex-row'>
+        <div className='relative flex mt-10 mb-[30rem] md:mb-[0rem] xl:mb-32 container mx-auto px-5 xl:px-0 flex-col md:flex-row'>
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -38,23 +38,23 @@ function Hero() {
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 3, repeat: Infinity }}
                 >
-                    <Image src={'/images/hero-1.png'} alt='hero1' width={319} height={319} className="w-[200px] h-[200px] xl:w-[319px] xl:h-[319px]"/>
+                    <Image src={'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='hero1' width={319} height={319} className="w-[200px] h-[200px] xl:w-[319px] xl:h-[319px] rounded-xl object-cover"/>
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[15rem] xl:top-[20rem] lg:left-[10rem]'
+                    className='absolute top-[15rem] xl:top-[24rem] lg:left-[8rem]'
                     animate={{ y: [0, 15, 0] }}
                     transition={{ duration: 4, repeat: Infinity }}
                 >
-                    <Image src={'/images/hero-2.png'} alt='hero2' width={319} height={319} className="w-[240px] h-[200px] xl:w-[319px] xl:h-[319px]"/>
+                    <Image src={'https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='hero2' width={319} height={319} className="w-[240px] h-[200px] xl:w-[319px] xl:h-[319px] rounded-xl object-cover"/>
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[4rem] 2xl:right-48 right-0 lg:right-2 xl:right-0'
+                    className='absolute top-[4rem] 2xl:right-40 right-0 lg:right-0'
                     animate={{ x: [0, -10, 0] }}
                     transition={{ duration: 5, repeat: Infinity }}
                 >
-                    <Image src={'/images/hero-3.png'} alt='hero3' width={319} height={236} className="w-[200px] h-[180px] xl:w-[319px] xl:h-[319px]"/>
+                    <Image src={'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='hero3' width={319} height={236} className="w-[200px] h-[180px] xl:w-[319px] xl:h-[319px] rounded-xl object-cover"/>
                 </motion.div>
 
                 <motion.div
@@ -66,7 +66,7 @@ function Hero() {
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[15rem] xl:top-[20rem] right-0 xl:right-0 2xl:right-[16rem] z-10'
+                    className='absolute top-[15rem] xl:top-[26rem] right-0 xl:right-[5rem] 2xl:right-[20rem] z-10'
                     animate={{ rotate: [0, 5, -5, 0] }}
                     transition={{ duration: 6, repeat: Infinity }}
                 >

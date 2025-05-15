@@ -6,9 +6,10 @@ import { motion } from 'framer-motion'
 function Partners() {
   return (
     <motion.div
-      className=' bg-[#191506] my-10'
+      className=' bg-[#191506] mb-10'
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 1, delay: 1 }}
     >
       <div className='min-h-[14rem] container mx-auto py-10'>
@@ -20,6 +21,7 @@ function Partners() {
                 key={index}
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: 1, delay: 0.5 + index * 0.2 }}
               >
                 <Image key={index} src={image} alt='partner' width={100} height={100} />

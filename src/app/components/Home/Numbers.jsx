@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 function Numbers() {
     return (
-        <div className='container mx-auto px-4'>
+        <div className='container mx-auto px-4 mb-20'>
             {/* Top Section */}
             <div className='flex flex-col lg:flex-row justify-end py-10'>
                 <div className='w-full lg:w-[40%]'>
@@ -12,6 +12,7 @@ function Numbers() {
                         className='font-semibold text-[2rem] lg:text-[2.7rem] leading-snug mb-5'
                         initial={{ y: -20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         Numbers That Speak for Themselves
@@ -20,6 +21,7 @@ function Numbers() {
                         className='text-[#636363] leading-6 text-sm md:text-base'
                         initial={{ y: -20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.8 }}
                     >
                         At EstateEdge, we believe in results. Our proven strategies have helped real estate agents achieve unprecedented growth. Here’s a glimpse of what we’ve accomplished together.
@@ -36,6 +38,7 @@ function Numbers() {
                             className='bg-white hover:bg-[#191506] transition-all duration-300 cursor-pointer px-5 py-6 rounded-xl min-h-[14rem] flex flex-col justify-center group'
                             initial={{ y: -20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.9 + index * 0.3 }}
                         >
                             <h2 className='font-semibold text-[2.5rem] sm:text-[3rem] group-hover:text-white'>{item.number}</h2>

@@ -20,7 +20,7 @@ const itemVariants = {
 
 const Team = () => {
     return (
-        <div className='mt-20 pb-20 bg-white px-4 sm:px-6 lg:px-0'>
+        <div className=' pb-20 bg-white px-4 sm:px-6 xl:px-0'>
             <motion.div 
                 className='max-w-7xl mx-auto py-10'
                 initial="hidden"
@@ -44,18 +44,18 @@ const Team = () => {
 
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-10 mt-10'>
                     <motion.div
-                        className='border-4 sm:border-8 border-[#FED23D] rounded-xl w-full max-w-[500px] -rotate-6'
+                        className='border-4 sm:border-8 border-[#FED23D] rounded-xl w-[300px] h-[200px] md:h-[400px] lg:w-[500px] lg:h-[550px] max-w-[500px] -rotate-6'
                         initial={{ scale: 0.9, rotate: -10, opacity: 0 }}
                         whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{ duration: 0.6 ,delay:0.5}}
                         viewport={{ once: true }}
                     >
                         <Image 
-                            src='/images/Team.png' 
+                            src='https://images.unsplash.com/photo-1624237642035-d2329fbadb9c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
                             width={500} 
                             height={500} 
                             alt='team' 
-                            className='object-cover rotate-6 w-full h-auto rounded-lg'
+                            className=' object-cover rotate-6  rounded-lg w-full h-full'
                         />
                     </motion.div>
 

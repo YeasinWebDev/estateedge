@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { motion } from 'motion/react';
 import { IoArrowForward } from 'react-icons/io5';
+import Link from 'next/link';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +21,14 @@ function Navbar() {
             transition={{ duration: 0.5 }}
         >
             {/* logo */}
-            <div className='flex flex-col items-center gap-1 z-50'>
+            <Link href={'/'} className='flex flex-col items-center gap-1 z-50'>
                 <Image src={'/images/logo.png'} alt='logo' width={70} height={70} />
                 <h5 className='font-semibold text-[#FED23D]'>EstateEdge</h5>
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <ul className='hidden md:flex items-center gap-5 font-medium cursor-pointer'>
-                <li className='hover:text-[#FED23D] transition'>About us</li>
+                <Link href={'/pages/about'} className='hover:text-[#FED23D] transition'>About us</Link>
                 <li className='hover:text-[#FED23D] transition'>Our Team</li>
                 <li className='hover:text-[#FED23D] transition'>Services</li>
             </ul>
@@ -53,9 +54,9 @@ function Navbar() {
             >
                 <div className='flex flex-col items-center justify-center h-full gap-10'>
                     <ul className='flex flex-col items-center gap-8 font-medium text-xl'>
-                        <li className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
+                        <Link href={'/pages/about'} className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
                             About us
-                        </li>
+                        </Link>
                         <li className='hover:text-[#FED23D] transition' onClick={toggleMenu}>
                             Our Team
                         </li>

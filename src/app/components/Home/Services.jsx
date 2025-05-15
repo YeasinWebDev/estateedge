@@ -41,6 +41,7 @@ function Services() {
                         key={index}
                         initial={{ y: -20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.5 + index * 0.2 }}
                         
                         >
