@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 export default function Page() {
   return (
-    <div className="bg-[#f5f2ed] min-h-screen">
+    <div className="bg-[#f5f2ed] min-h-screen overflow-hidden">
       <Navbar />
       <Home />
       <Footer />
